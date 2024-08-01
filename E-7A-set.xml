@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<PropertyList include="737NG-700-common.xml">
+
+	<sim>
+		<description>Boeing E-7A Wedgetail</description>
+		<aero>E-7A</aero>
+		<primary-set>true</primary-set>
+	</sim>
+	<instrumentation>
+		<cdu>
+			<display>IDENT</display>
+			<ident>
+				<model>E-7A</model>
+				<engines>CFM56-7B27</engines>
+			</ident>
+			<input type="string"/>
+			<serviceable type="bool">true</serviceable>
+		</cdu>
+	</instrumentation>
+</PropertyList>
