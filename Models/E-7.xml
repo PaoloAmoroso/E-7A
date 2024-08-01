@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<PropertyList include="737-model-common.xml">
+  <path>E-7.ac</path>
+  <offsets>
+    <z-m>-1.20</z-m>
+    <!--<pitch-deg>-1.2</pitch-deg>-->
+  </offsets>
+  <animation>
+    <texture>737-700.png</texture>
+  </animation>
+  <animation n="0">
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>doorLF</object-name>
+    <object-name>doorLR</object-name>
+    <object-name>doorRR</object-name>
+    <object-name>EexitLH</object-name>
+    <object-name>EexitRH</object-name>
+    <object-name>doorRF</object-name>
+    <object-name>cargodoorF</object-name>
+    <object-name>cargodoorR</object-name>
+    <object-name>lhfairing</object-name>
+    <object-name>geardoor</object-name>
+    <object-name>engnose.001</object-name>
+    <object-name>lreverserib_1</object-name>
+    <object-name>rhngdoor</object-name>
+    <object-name>lhngdoor</object-name>
+    <object-name>rhwtobfairing</object-name>
+    <object-name>geardoorrh</object-name>
+    <object-name>No2engfancase</object-name>
+    <object-name>No2reverser_1</object-name>
+    <object-name>fan2</object-name>
+    <object-name>vstab</object-name>
+    <object-name>rudder</object-name>
+    <object-name>Stabilizer-L</object-name>
+    <object-name>Radar-Cooling-Vent</object-name>
+    <object-name>Radome_1</object-name>
+    <object-name>Radome_2</object-name>
+    <object-name>SATCOM_Antenna</object-name>
+    <object-name>VHF_Antenna</object-name>
+    <object-name>ADF_Antenna</object-name>
+    <object-name>ESM_Nose</object-name>
+    <object-name>ESM_Support</object-name>
+    <object-name>LF_ADF</object-name>
+    <object-name>LWF</object-name>
+    <object-name>DIRCM</object-name>
+    <object-name>JTIDS</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+
+  <!-- This for a better performance while in flight... -->
+   <animation>
+     <type>select</type>
+     <object-name>Stabilizer-L</object-name>
+     <object-name>Radar-Cooling-Vent</object-name>
+     <object-name>Radome_1</object-name>
+     <object-name>Radome_2</object-name>
+     <object-name>SATCOM_Antenna</object-name>
+     <object-name>VHF_Antenna</object-name>
+     <object-name>ADF_Antenna</object-name>
+     <object-name>ESM_Nose</object-name>
+     <object-name>ESM_Support</object-name>
+     <object-name>LF_ADF</object-name>
+     <object-name>LWF</object-name>
+     <object-name>DIRCM</object-name>
+     <object-name>JTIDS</object-name>
+
+     <object-name>windowsrh</object-name>
+     <object-name>ngww</object-name>
+	<condition>
+	  <not>
+	   <property>sim/current-view/internal</property>
+	  </not>
+	</condition>
+   </animation>
+
+  <model n="100">
+    <name>Cockpit</name>
+    <offsets>
+      <x-m>-15.807</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model n="102">
+    <name>NoseGear</name>
+    <offsets>
+        <x-m>2.51</x-m>
+        <y-m>0.0</y-m>
+        <z-m>0.0</z-m>
+        <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model n="108">
+    <name>VertStab</name>
+    <offsets>
+      <x-m>-2.3</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model n="109">
+    <name>HorzStab</name>
+    <offsets>
+      <x-m>-2.5</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model n="110">
+    <name>Pushback</name>
+    <path>Aircraft/E-7A/Models/Pushback/pushback.xml</path>
+    <offsets>
+      <x-m>-14.5</x-m>
+      <y-m>0</y-m>
+      <z-m>-2.75</z-m>
+    </offsets>
+  </model>
+  <!-- Lights -->
+  <model n="200">
+    <name>flashtail</name>
+    <offsets>
+        <x-m> 16.62</x-m>
+        <y-m>0.0</y-m>
+        <z-m> 2.06</z-m>     
+    </offsets>
+  </model>
+  <model n="201">
+    <name>NoseGearLandinglight</name>
+    <offsets>
+        <x-m>-13.73</x-m>
+        <y-m>  0.00</y-m> 
+        <z-m> -1.60</z-m> 
+    </offsets>
+  </model>
+
+  <!-- Contrail -->
+
+<model>
+  <path>Aircraft/E-7A/Models/Effects/Contrail/contrail.xml</path>
+  <offsets>
+    <x-m>3.3</x-m>
+    <y-m>-4.7632</y-m>
+    <z-m>-1.28782</z-m> 
+    <roll-deg>    0 </roll-deg>
+    <pitch-deg>   0 </pitch-deg>
+    <heading-deg> 0 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>Aircraft/E-7A/Models/Effects/Contrail/contrail.xml</path>
+  <offsets>
+    <x-m>3.3</x-m>
+    <y-m>4.7713</y-m>
+    <z-m>-1.28753</z-m> 
+    <roll-deg>    0 </roll-deg>
+    <pitch-deg>   0 </pitch-deg>
+    <heading-deg> 0 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Fuel Truck -->
+
+<model>
+  <name>fuel-truck</name>
+  <path>Aircraft/E-7A/Models/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.xml</path>
+  <offsets>
+    <x-m>1.8</x-m>
+    <y-m>12</y-m>
+    <z-m>1.81</z-m>
+  </offsets>
+  <condition>
+    <and>
+      <less-than> 
+        <property>velocities/groundspeed-kt</property>
+        <value>1</value>
+      </less-than>
+      <equals>
+       <property>services/fuel-truck/enable</property>
+       <value>1</value>
+     </equals>
+   </and>
+ </condition>
+</model>
+
+<!-- De-icing Truck -->
+
+<model>
+  <name>de-ice-truck</name>
+  <path>Aircraft/E-7A/Models/Services/De-Icing/volvo_deicing_truck.xml</path>
+  <condition>
+    <and>   
+      <equals>
+       <property>services/deicing_truck/enable</property>
+       <value>1</value>
+     </equals>
+     <less-than>  
+      <property>velocities/groundspeed-kt</property>
+      <value>1</value>
+    </less-than>
+  </and>
+</condition>
+<offsets>
+  <x-m>-14</x-m><!--original -15-->
+  <y-m>10</y-m>
+  <z-m>-2.48</z-m>
+  <heading-deg>160</heading-deg>
+</offsets>
+</model>
+
+<!-- Baggage Truck -->
+
+<model>
+  <name>baggage-truck</name>
+  <path>Aircraft/E-7A/Models/Services/Baggage/cargo_ramp.xml</path>
+  <condition>
+    <and>
+      <equals>
+       <property>services/baggage/enable</property>
+       <value>1</value>
+     </equals>
+     <less-than>  
+      <property>velocities/groundspeed-kt</property>
+      <value>1</value>
+    </less-than>
+  </and>
+</condition>
+<offsets>
+  <x-m>-4.2</x-m>
+  <y-m>0</y-m>
+  <z-m>0.95</z-m>
+  <heading-deg>0</heading-deg>
+</offsets>
+</model>
+
+<!-- External Power -->
+
+<model>
+  <name>ext-pwr</name>
+  <path>Aircraft/E-7A/Models/Services/External-Power/ext-pwr-box.ac</path>
+  <condition>
+    <and>
+      <equals>
+       <property>services/ext-pwr/enable</property>
+       <value>1</value>
+     </equals>
+     <less-than>  
+      <property>velocities/groundspeed-kt</property>
+      <value>1</value>
+    </less-than>
+  </and>
+</condition>
+<offsets>
+  <x-m>-13</x-m>
+  <y-m>2</y-m>
+  <z-m>2.16</z-m>
+  <heading-deg>0</heading-deg>
+</offsets>
+</model>
+
+<model>
+ <name>Bus</name>
+ <path>Aircraft/E-7A/Models/Services/Bus/bus.xml</path>
+ <condition>
+   <property>controls/switches/bus</property>
+   <less-than>
+    <property>velocities/groundspeed-kt</property>
+    <value>1</value>
+  </less-than>
+</condition>
+<offsets>
+  <x-m>6</x-m>
+  <y-m>-10</y-m>
+  <z-m>-0.2</z-m>
+  <pitch-deg>-1</pitch-deg>
+  <heading-deg>-270</heading-deg>
+</offsets>
+</model>
+
+
+<animation>
+  <type>material</type>
+  <object-name>floor</object-name>
+  <emission>
+    <red>0.9</red>
+    <green>0.75</green>
+    <blue>0.6</blue>
+    </emission>
+     <condition>
+       <property>systems/electrical/on</property>
+    </condition>
+   </animation>
+
+<!-- Services by Gabriel Hernandez(YV399) -->
+
+<model>
+  <path>Aircraft/E-7A/Models/Services/Services.xml</path>
+  <offsets>
+    <x-m>0</x-m>
+    <y-m>0</y-m>
+    <z-m>0</z-m>
+  </offsets>
+</model>
+</PropertyList>
