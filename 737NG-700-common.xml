@@ -337,5 +337,8 @@
 		<icing>
 			<file>Aircraft/E-7A/Nasal/icing.nas</file>
 		</icing>
+		<aar> 
+			<file>Aircraft/Generic/aar.nas</file>
+		</aar>		
 	</nasal>
 </PropertyList>
